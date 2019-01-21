@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js">
+  </script>
+  <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+</head>
+<style>
+  .head_img img {
+    width: 240px;
+    height: 72px;
+  }
+
+  .mynav {
+    text-align: center;
+  }
+
+  /*.myulnva {
+    margin-left: 38%;
+  }*/
+
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+
+  }
+  .carousel-inner {
+  	margin-top: 155px;
+  }
+      
+  .container{
+  	margin-top: 30px;
+  }
+  .container-fluid .row img{
+  	width: 100%;
+  }
+  .col{
+  	position: relative;
+  }
+  .mask{
+  	width: 95%;
+  	height: 82.6%;
+  	background: rgba(200,200,220,0.7);
+  	position: absolute;
+  	top: 0;
+  	left: 2.2%;
+  	display: none;
+  }
+  .col:hover .mask{
+  	display: block;
+  }
+  footer {
+    background: #E0E0E0;
+    color: #eee;
+    font-size: 11px;
+    padding: 20px;
+}
+ul.unstyled {
+    list-style: none;
+    padding: 0;
+}   
+.logos {
+            width: 57px;
+            height: 39px;
+            margin: 20px 0 20px 20px;
+        }
+</style>
+
+<body>
+  <nav class="nav navbar-inverse  navbar-fixed-top"    style="width: 100%;">
+    <div class="container mynav">
+      <div class="head_img center-block"><img src="http://www.infinistudio.cn/Public/home/images/title2.png" alt=""></div>
+      <div class="row" style="display: flex;justify-content: center;">
+      	 <ul class="nav navbar-nav  myulnva">
+        <li><a href="">Home</a> </li>
+        <li><a href="">work</a></li>
+        <li><a href="">contact</a> </li>
+        <li><a href="">join us</a> </li>
+      </ul>
+      </div>
+    
+      <!-- <button id="login" type="button" class="btn btn-success navbar-right">登录</button>
+                    <button type="button" class="btn btn-info navbar-right">注册</button> -->
+    </div>
+  </nav>
+
+<div class="container" >
+	<div id="myCarousel" class="carousel slide">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators " style="margin-bottom: -70px;">
+        <li data-target="#myCarousel" data-slide-to="0" class="active" style="background: red;"></li>
+        <li data-target="#myCarousel" data-slide-to="1" style="background: red;"></li>
+        <li data-target="#myCarousel" data-slide-to="2" style="background: red;"></li>
+    </ol>   
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="http://www.infinistudio.cn/Public/Upload/2017-03-08/58bf8b14867c3.jpg" alt="First slide">
+        </div>
+        <div class="item">
+            <img src="http://www.infinistudio.cn/Public/Upload/2017-03-08/58bfbd40b1d73.jpg" alt="Second slide">
+        </div>
+        <div class="item">
+            <img src="http://www.infinistudio.cn/Public/Upload/2017-03-08/58bf8b9d13662.jpg" alt="Third slide">
+        </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left " href="#myCarousel" 
+       data-slide="prev"  style="width: 0;"> <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="carousel-control right" href="#myCarousel" 
+       data-slide="next" style="width: 0;"> <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+</div>
+  
+     <div class="container-fluid" style="margin-top: 50px;">
+     	<div class="row">
+     		<div class="col col-lg-12" style="text-indent: 60px;font-size: 30px;">
+     			
+					Infini Studio （映纷创意）是一家以动画和设计为驱动的独立创意机构。我们运用多样化的创作形式，为品牌提供丰富多元的跨媒体整合创意营销。
+				
+     		</div>
+     	</div>
+     	 
+     	
+        <div class="row">
+            <!-- 第一个容器 -->
+            <div class="col col-md-4">
+           <div class="mask text-center">
+           <p style="color: white;font-size: 26px;margin-top: 20%;"> 腾讯之门</p>
+           <p style="color: white;">亚努斯之门</p>
+            	</div>
+                <div class="panel panel-danger">
+                      <img src="http://www.infinistudio.cn/Public/Upload/2018-09-06/5b909ea21abb0.jpg"/>
+                         
+                    <div class="panel-footer" style="text-indent: 35%;">
+                        this is footer
+                    </div>
+                </div>
+            </div>
+            <!-- 第二个容器 -->
+            <div class="col col-md-4 ">
+            	 <div class="mask text-center">
+           <p style="color: white;font-size: 26px;margin-top: 20%;"> 腾讯之门</p>
+           <p style="color: white;">亚努斯之门</p>
+            	</div>
+                <div class="panel panel-danger">
+                        <img src="http://www.infinistudio.cn/Public/Upload/2018-09-06/5b909ea21abb0.jpg"/>
+              
+                    <div class="panel-footer" style="text-indent: 35%;">
+                        this is footer
+                    </div>
+                </div>
+            </div>
+            <!-- 第三个容器 -->
+            <div class="col col-md-4 ">
+            	 <div class="mask text-center">
+           <p style="color: white;font-size: 26px;margin-top: 20%;"> 腾讯之门</p>
+           <p style="color: white;">亚努斯之门</p>
+            	</div>
+                <div class="panel panel-danger">
+                        <img src="http://www.infinistudio.cn/Public/Upload/2018-09-06/5b909ea21abb0.jpg"/>
+              
+                    <div class="panel-footer" style="text-indent: 35%;">
+                        this is footer
+                    </div>
+                </div>
+            </div>
+            <!-- 第一个容器 -->
+            <div class="col col-md-4">
+            	 <div class="mask text-center">
+           <p style="color: white;font-size: 26px;margin-top: 20%;"> 腾讯之门</p>
+           <p style="color: white;">亚努斯之门</p>
+            	</div>
+                <div class="panel panel-danger">
+                        <img src="http://www.infinistudio.cn/Public/Upload/2018-09-06/5b909ea21abb0.jpg"/>
+              
+                    <div class="panel-footer" style="text-indent:35%;">
+                        this is footer
+                    </div>
+                </div>
+            </div>
+            <!-- 第二个容器 -->
+            <div class="col col-md-4 ">
+            	 <div class="mask text-center">
+           <p style="color: white;font-size: 26px;margin-top: 20%;"> 腾讯之门</p>
+           <p style="color: white;">亚努斯之门</p>
+            	</div>
+                <div class="panel panel-danger">
+                        <img src="http://www.infinistudio.cn/Public/Upload/2018-09-06/5b909ea21abb0.jpg"/>
+              
+                    <div class="panel-footer" style="text-indent: 35%;">
+                        this is footer
+                    </div>
+                </div>
+            </div>
+            <!-- 第三个容器 -->
+            <div class="col col-md-4 ">
+            	 <div class="mask text-center">
+           <p style="color: white;font-size: 26px;margin-top: 20%;"> 腾讯之门</p>
+           <p style="color: white;">亚努斯之门</p>
+            	</div>
+                <div class="panel panel-danger">
+                        <img src="http://www.infinistudio.cn/Public/Upload/2018-09-06/5b909ea21abb0.jpg"/>
+              
+                    <div class="panel-footer" style="text-indent:35%">
+                        this is footer
+                    </div>
+                </div>
+            </div>
+            <!-- 第一个容器 -->
+            <div class="col col-md-4">
+            	 <div class="mask text-center">
+           <p style="color: white;font-size: 26px;margin-top: 20%;"> 腾讯之门</p>
+           <p style="color: white;">亚努斯之门</p>
+            	</div>
+                <div class="panel panel-danger">
+                        <img src="http://www.infinistudio.cn/Public/Upload/2018-09-06/5b909ea21abb0.jpg"/>
+              
+                    <div class="panel-footer" style="text-indent:35%;">
+                        this is footer
+                    </div>
+                </div>
+            </div>
+            <!-- 第二个容器 -->
+            <div class="col col-md-4 ">
+            	 <div class="mask text-center">
+           <p style="color: white;font-size: 26px;margin-top: 20%;"> 腾讯之门</p>
+           <p style="color: white;">亚努斯之门</p>
+            	</div>
+                <div class="panel panel-danger">
+                        <img src="http://www.infinistudio.cn/Public/Upload/2018-09-06/5b909ea21abb0.jpg"/>
+              
+                    <div class="panel-footer" style="text-indent: 35%;">
+                        this is footer
+                    </div>
+                </div>
+            </div>
+            <!-- 第三个容器 -->
+            <div class="col col-md-4 ">
+            	 <div class="mask text-center">
+           <p style="color: white;font-size: 26px;margin-top: 20%;"> 腾讯之门</p>
+           <p style="color: white;">亚努斯之门</p>
+            	</div>
+                <div class="panel panel-danger">
+                        <img src="http://www.infinistudio.cn/Public/Upload/2018-09-06/5b909ea21abb0.jpg"/>
+              
+                    <div class="panel-footer" style="text-indent: 35%;">
+                        this is footer
+                    </div>
+                </div>
+            </div>
+            <!-- 第一个容器 -->
+            <div class="col col-md-4">
+            	 <div class="mask text-center">
+           <p style="color: white;font-size: 26px;margin-top: 20%;"> 腾讯之门</p>
+           <p style="color: white;">亚努斯之门</p>
+            	</div>
+                <div class="panel panel-danger">
+                        <img src="http://www.infinistudio.cn/Public/Upload/2018-09-06/5b909ea21abb0.jpg"/>
+              
+                    <div class="panel-footer" style="text-indent: 35%;">
+                        this is footer
+                    </div>
+                </div>
+            </div>
+            <!-- 第二个容器 -->
+            <div class="col col-md-4 ">
+            	 <div class="mask text-center">
+           <p style="color: white;font-size: 26px;margin-top: 20%;"> 腾讯之门</p>
+           <p style="color: white;">亚努斯之门</p>
+            	</div>
+                <div class="panel panel-danger">
+                        <img src="http://www.infinistudio.cn/Public/Upload/2018-09-06/5b909ea21abb0.jpg"/>
+              
+                    <div class="panel-footer" style="text-indent: 35%;">
+                        this is footer
+                    </div>
+                </div>
+            </div>
+            <!-- 第三个容器 -->
+            <div class="col col-md-4 ">
+            	 <div class="mask text-center">
+           <p style="color: white;font-size: 26px;margin-top: 20%;"> 腾讯之门</p>
+           <p style="color: white;">亚努斯之门</p>
+            	</div>
+                <div class="panel panel-danger">
+                        <img src="http://www.infinistudio.cn/Public/Upload/2018-09-06/5b909ea21abb0.jpg"/>
+              
+                    <div class="panel-footer" style="text-indent:35%;">
+                        this is footer
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 text-right " >
+                 <img src="http://www.infinistudio.cn/Public/home/images/contact1.jpg"/>
+                <img src="http://www.infinistudio.cn/Public/home/images/contact2.jpg"/>
+                <img src="http://www.infinistudio.cn/Public/home/images/contact3.jpg"/>
+                </div>
+                
+                <div class="col-sm-2">
+                    <ul class="unstyled" style="font-size: 20px;">
+                    	  <li><img src="http://www.infinistudio.cn/Public/home/images/footer_logo.jpg" style="width: 200px;"></img> </li>
+                        <li style="margin-left: 20px;"><a href="" >主页</a></li>
+                        <li style="margin-left: 20px;"><a href="">服务</a></li>
+                        <li style="margin-left: 20px;"><a href="">链接</a></li>
+                        <li style="margin-left: 20px;"><a href="">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--页脚结束-->
+</body>
+
+</html>
