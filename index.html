@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js">
+    </script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<style>
+</style>
+
+<body>
+    <nav class="nav navbar-inverse">
+        <div class="container">
+            <a class="navbar-brand" href="javascript:void(0)">淘宝</a>
+            <ul class="nav navbar-nav">
+                <li><a href="">首页</a> </li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">联系我们</a> </li>
+            </ul>
+            <button id="login" type="button" class="btn btn-success navbar-right">登录</button>
+            <button type="button" class="btn btn-info navbar-right">注册</button>
+        </div>
+    </nav>
+    <!-- 这是容器pannel -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- 第一个容器 -->
+            <div class="col col-md-4">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        this is header
+                    </div>
+                    <div class="panel-body">
+                        this is body
+                    </div>
+                    <div class="panel-footer">
+                        this is footer
+                    </div>
+                </div>
+            </div>
+            <!-- 第二个容器 -->
+            <div class="col col-md-4">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        this is header
+                    </div>
+                    <div class="panel-body">
+                        this is body
+                    </div>
+                    <div class="panel-footer">
+                        this is footer
+                    </div>
+                </div>
+            </div>
+            <!-- 第三个容器 -->
+            <div class="col col-md-4">
+                <div class="panel panel-collapse">
+                    <div class="panel-heading">
+                        this is header
+                    </div>
+                    <div class="panel-body">
+                        this is body
+                    </div>
+                    <div class="panel-footer">
+                        this is footer
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <p class="alert alert-info">dddddd</p> -->
+    <!-- collapse -->
+    <div class="row">
+        <div class="col col-lg-1"></div>
+        <ul>
+            <li class="list-group-item active breadcrumb"><a  data-toggle="collapse" data-target="#a">李经理</a></li>
+            <div class="collapse" id="a">
+                <ul class="list list-group">
+                    <li class="list list-group-item">dddf</li>
+                </ul>
+            </div>
+            <li class="list-group-item"><a href="">了解啦</a></li>
+            <li class="list-group-item"><a href="">开机</a></li>
+            <li class="list-group-item"><a href="">空间</a></li>
+            <li class="list-group-item"><a href="">看</a></li>
+        </ul>
+    </div>
+    <!-- 这是 modal -->
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-title">
+                    this is title
+                    <span class="close " data-dismiss="modal">&times;</span>
+                </div>
+                <div class="modal-body">this is body</div>
+                <div class="modal-footer">
+                    <button id="close_modal" type="button" class="btn btn-danger">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#login").on("click", function () {
+            $(".modal").modal("show");
+        });
+        $("#close_modal").on("click", function () {
+            $('.modal').modal("hide");
+        })
+
+    })
+</script>
+
+</html>
